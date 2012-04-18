@@ -1,0 +1,141 @@
+A_id
+B_id
+CONV number of messages A and B
+CONV statuses B to A
+CONV statuses A to B
+CONV number of conversations between A and B
+CONV average number of messages per conversation
+CONV minimum number of messages per conversation
+CONV maximum number of messages per conversation
+CONV tau
+CONV average balance
+CONV trust value
+CONV conversation response time A to B
+CONV conversation response time B to A
+CONV A-B inversion score: how often A prefers B over other users
+CONV B-A inversion score: how often B prefers A over other users
+PAIR statuses from A to B
+PAIR statuses from B to A
+PAIR statuses A received
+PAIR statuses B received
+PAIR response time A to B in seconds
+PAIR response time B to A in seconds
+PAIR entropy for messages between A and B
+PROP-AB number of messages from A to B
+PROP-AB number of messages to B from A and others
+PROP-AB number of messages by B to A and others (directed and broadcast)
+PROP-AB number of directed messages by A to B and others
+PROP-AB number of propagations by B from A and others
+PROP-AB number of propagations by B from A
+PROP-AB propagation energy B spends on A
+PROP-AB how worthy B considers A messages to worth propagating
+PROP-AB degree of A and B reciprocating propagations
+PROP-AB The degree similarity of A and B
+PROP-BA number of messages from A to B
+PROP-BA number of messages to B from A and others
+PROP-BA number of messages by B to A and others (directed and broadcast)
+PROP-BA number of directed messages by A to B and others
+PROP-BA number of propagations by B from A and others
+PROP-BA number of propagations by B from A
+PROP-BA propagation energy B spends on A
+PROP-BA how worthy B considers A messages to worth propagating
+PROP-BA degree of A and B reciprocating propagations
+PROP-BA The degree similarity of A and B
+USER-A mean number of friends in timeline
+USER-A standard deviation of number of friends in timeline
+USER-A mean number of followers in timeline
+USER-A standard deviation of number of followers in timeline
+USER-A number of days on twitter
+USER-A total number of statuses by user
+USER-A total number of statuses favorited by user
+USER-A mean spacing between statuses in seconds in timeline
+USER-A standard deviation of spacing between statuses in seconds in timeline
+USER-A fraction of statuses in timeline that are retweets
+USER-A fraction of statuses in timeline that are directed
+USER-A number of statuses in timeline
+USER-A mean number of urls in statuses in timeline
+USER-A standard deviation of number of urls in statuses in timeline
+USER-A mean number of hashtags in statuses in timeline
+USER-A standard deviation of number of hashtags in statuses in timeline
+USER-A mean number of mentions in statuses in timeline
+USER-A standard deviation of number of mentions in statuses in timeline
+USER-A mean text length in timeline
+USER-A standard deviation of text length in timeline
+USER-A number of users that user propagates
+USER-A number of users that propagate the user
+USER-A number of users that converse with user
+USER-A average general response time
+USER-A standard deviation of general response time
+USER-A average number of propagations of users messages by other users
+USER-A standard deviation of number propagations of users messages by other users
+USER-A average propagation energy spent on user
+USER-A standard deviation of propagation energy spent on user
+USER-A average worthiness
+USER-A standard deviation of worthiness
+USER-A average degree of propagation reciprocation
+USER-A standard deviation of degree of propagation reciprocation
+USER-A average number of conversations
+USER-A standard deviation of number of conversations
+USER-A average number of messages per conversation
+USER-A standard deviation of average number of messages per conversation
+USER-A average minimum number of messages per conversation
+USER-A standard deviation of minimum number of messages per conversation
+USER-A average maximum number of messages per conversation
+USER-A standard deviation of maximum number of messages per conversation
+USER-A average tau
+USER-A standard deviation of tau
+USER-A average balance
+USER-A standard deviation of balance
+USER-A average trust value
+USER-A standard deviation of trust value
+USER-A average conversation response time
+USER-A standard deviation of conversation response time
+USER-B mean number of friends in timeline
+USER-B standard deviation of number of friends in timeline
+USER-B mean number of followers in timeline
+USER-B standard deviation of number of followers in timeline
+USER-B number of days on twitter
+USER-B total number of statuses by user
+USER-B total number of statuses favorited by user
+USER-B mean spacing between statuses in seconds in timeline
+USER-B standard deviation of spacing between statuses in seconds in timeline
+USER-B fraction of statuses in timeline that are retweets
+USER-B fraction of statuses in timeline that are directed
+USER-B number of statuses in timeline
+USER-B mean number of urls in statuses in timeline
+USER-B standard deviation of number of urls in statuses in timeline
+USER-B mean number of hashtags in statuses in timeline
+USER-B standard deviation of number of hashtags in statuses in timeline
+USER-B mean number of mentions in statuses in timeline
+USER-B standard deviation of number of mentions in statuses in timeline
+USER-B mean text length in timeline
+USER-B standard deviation of text length in timeline
+USER-B number of users that user propagates
+USER-B number of users that propagate the user
+USER-B number of users that converse with user
+USER-B average general response time
+USER-B standard deviation of general response time
+USER-B average number of propagations of users messages by other users
+USER-B standard deviation of number propagations of users messages by other users
+USER-B average propagation energy spent on user
+USER-B standard deviation of propagation energy spent on user
+USER-B average worthiness
+USER-B standard deviation of worthiness
+USER-B average degree of propagation reciprocation
+USER-B standard deviation of degree of propagation reciprocation
+USER-B average number of conversations
+USER-B standard deviation of number of conversations
+USER-B average number of messages per conversation
+USER-B standard deviation of average number of messages per conversation
+USER-B average minimum number of messages per conversation
+USER-B standard deviation of minimum number of messages per conversation
+USER-B average maximum number of messages per conversation
+USER-B standard deviation of maximum number of messages per conversation
+USER-B average tau
+USER-B standard deviation of tau
+USER-B average balance
+USER-B standard deviation of balance
+USER-B average trust value
+USER-B standard deviation of trust value
+USER-B average conversation response time
+USER-B standard deviation of conversation response time

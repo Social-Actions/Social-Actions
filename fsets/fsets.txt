@@ -1,0 +1,51 @@
+time python ../features/timeline.py ../collection/*.json > timeline.txt;
+time python ../features/timeline-undirected.py ../collection/*.json > timeline-u.txt;
+time sort -k4n,4 timeline.txt > stimeline.txt;
+time python ../features/features.py ../collection/*.json > features.txt;
+time sort -k2n,2 -k3n,3 -k1n,1 features.txt > sfeatures.txt;
+time python ../features/user_features.py sfeatures.txt > user_feat.txt;
+time python ../features/findFollowers.py ../collection/*.json > followers.txt;
+time ../features/conv timeline.txt conv_feat.txt;
+time ../features/prop timeline.txt timeline-u.txt prop_feat.txt followers.txt;
+time python ../features/pair_feat.py stimeline.txt > pair_feat.txt;
+time sort -k1n,1 -k2n,2 pair_feat.txt > spair_feat.txt;
+
+time python ../features/conv_counts.py conv_feat.txt > conv_counts.txt;
+time python ../features/prop_counts.py prop_feat.txt > prop_counts.txt;
+time python ../features/accumul_feat.py spair_feat.txt 6 > acc_pair.txt;
+time python ../features/accumul_feat.py prop_feat.txt 7 8 9 10 > acc_prop.txt;
+time python ../features/accumul_feat.py conv_feat.txt 5 6 7 8 9 10 11 12 > acc_conv.txt;
+
+python ../fsets/combine_feat_a.py user_feat.txt prop_counts.txt > u+pc.txt;
+python ../fsets/combine_feat_a.py u+pc.txt conv_counts.txt > u+pc+cc.txt;
+python ../fsets/combine_feat_a.py u+pc+cc.txt acc_pair.txt > u+pc+cc+acp.txt;
+python ../fsets/combine_feat_a.py u+pc+cc+acp.txt acc_prop.txt > u+pc+cc+acp+acpr.txt;
+python ../fsets/combine_feat_a.py u+pc+cc+acp+acpr.txt acc_conv.txt > u+pc+cc+acp+acpr+ac.txt;
+cp u+pc+cc+acp+acpr+ac.txt f1.txt;
+
+python ../fsets/combine_feat_a_excl.py user_feat.txt prop_counts.txt > x-u+pc.txt;
+python ../fsets/combine_feat_a_excl.py x-u+pc.txt conv_counts.txt > x-u+pc+cc.txt;
+python ../fsets/combine_feat_a_excl.py x-u+pc+cc.txt acc_pair.txt > x-u+pc+cc+acp.txt;
+python ../fsets/combine_feat_a_excl.py x-u+pc+cc+acp.txt acc_prop.txt > x-u+pc+cc+acp+acpr.txt;
+python ../fsets/combine_feat_a_excl.py x-u+pc+cc+acp+acpr.txt acc_conv.txt > x-u+pc+cc+acp+acpr+ac.txt;
+cp x-u+pc+cc+acp+acpr+ac.txt f1p.txt;
+
+python ../fsets/combine_feat_ab.py conv_feat.txt pair_feat.txt > c+p.txt;
+python ../fsets/combine_feat_ab-ba.py c+p.txt prop_feat.txt > c+p+pr.txt;
+python ../fsets/add_user_feat_ab.py c+p+pr.txt f1.txt > c+p+pr+a+b.txt;
+cp c+p+pr+a+b.txt f0.txt;
+
+python ../fsets/combine_feat_ab_excl.py conv_feat.txt pair_feat.txt > x-c+p.txt;
+python ../fsets/combine_feat_ab-ba_excl.py x-c+p.txt prop_feat.txt > x-c+p+pr.txt;
+python ../fsets/add_user_feat_ab_excl.py x-c+p+pr.txt f1p.txt > x-c+p+pr+a+b.txt;
+cp x-c+p+pr+a+b.txt f0p.txt;
+
+mkdir sets
+mv f0.txt sets/
+mv f0p.txt sets/
+mv f1.txt sets/
+mv f1p.txt sets/
+cp ../fsets/f0-key.txt sets/f0-key.txt
+cp ../fsets/f0-key.txt sets/f0p-key.txt
+cp ../fsets/f1-key.txt sets/f1-key.txt
+cp ../fsets/f1-key.txt sets/f1p-key.txt

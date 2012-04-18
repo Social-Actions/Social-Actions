@@ -1,0 +1,50 @@
+A_id
+USER-A mean number of friends in timeline
+USER-A standard deviation of number of friends in timeline
+USER-A mean number of followers in timeline
+USER-A standard deviation of number of followers in timeline
+USER-A number of days on twitter
+USER-A total number of statuses by user
+USER-A total number of statuses favorited by user
+USER-A mean spacing between statuses in seconds in timeline
+USER-A standard deviation of spacing between statuses in seconds in timeline
+USER-A fraction of statuses in timeline that are retweets
+USER-A fraction of statuses in timeline that are directed
+USER-A number of statuses in timeline
+USER-A mean number of urls in statuses in timeline
+USER-A standard deviation of number of urls in statuses in timeline
+USER-A mean number of hashtags in statuses in timeline
+USER-A standard deviation of number of hashtags in statuses in timeline
+USER-A mean number of mentions in statuses in timeline
+USER-A standard deviation of number of mentions in statuses in timeline
+USER-A mean text length in timeline
+USER-A standard deviation of text length in timeline
+USER-A number of users that user propagates
+USER-A number of users that propagate the user
+USER-A number of users that converse with user
+USER-A average general response time
+USER-A standard deviation of general response time
+USER-A average number of propagations of users messages by other users
+USER-A standard deviation of number propagations of users messages by other users
+USER-A average propagation energy spent on user
+USER-A standard deviation of propagation energy spent on user
+USER-A average worthiness
+USER-A standard deviation of worthiness
+USER-A average degree of propagation reciprocation
+USER-A standard deviation of degree of propagation reciprocation
+USER-A average number of conversations
+USER-A standard deviation of number of conversations
+USER-A average number of messages per conversation
+USER-A standard deviation of average number of messages per conversation
+USER-A average minimum number of messages per conversation
+USER-A standard deviation of minimum number of messages per conversation
+USER-A average maximum number of messages per conversation
+USER-A standard deviation of maximum number of messages per conversation
+USER-A average tau
+USER-A standard deviation of tau
+USER-A average balance
+USER-A standard deviation of balance
+USER-A average trust value
+USER-A standard deviation of trust value
+USER-A average conversation response time
+USER-A standard deviation of conversation response time

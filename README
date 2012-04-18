@@ -1,0 +1,22 @@
+The following workflow will generate sets of social features for Twitter users
+
+
+0. download c++ boost libraries and add to "util" folder
+	- have it such that "Social-Features/util/boost/tuple/tuple.hpp" is a valid path
+1. ensure c code is compiled:
+		% cd features
+		% make clean
+		% make
+2. add Twitter json files to "collection" folder
+	- have it such that "Social-Features/collection/<filename>.json" is one of the files
+	- scripts expect files in the format the Twitter streaming API uses
+3. make a directory "results"
+4. execute the lines in fsets/fsets.txt in order while in "results" folder
+	Note: 	You'll need twittercollect and simplejson python packages installed
+			You'll also need the unix program sort installed
+	- commands need to execute in that order
+	- some commands will take a while to execute
+	- some scripts (conv and prop) require large amounts of memory
+	- memory needed depends on the size of the timeline
+	- also a number of intermediate files will be created. some are large.
+	- total size of intermediate files is less than the size of the collection
